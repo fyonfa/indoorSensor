@@ -2,26 +2,26 @@ version: 0.0
 os: linux	
 files:	
   - source: /app/
-    destination: /home/app/indoorSensor	
+    destination: /home/ubuntu/indoorSensor	
 permissions:	
   - object: /	
     pattern: "**"	
-    owner: app	
-    group: app	
+    owner: ubuntu	
+    group: ubuntu	
 hooks:	
   ApplicationStop:	
     - location: scripts/ApplicationStop.sh	
       timeout: 60	
-      runas: app	
+      runas: ubuntu	
   BeforeInstall:	
     - location: scripts/BeforeInstall.sh	
       timeout: 300	
-      runas: app	
+      runas: ubuntu	
   AfterInstall:	
     - location: scripts/AfterInstall.sh	
       timeout: 300	
-      runas: app	
+      runas: ubuntu	
   ApplicationStart:	
     - location: scripts/ApplicationStart.sh	
       timeout: 60	
-      runas: app
+      runas: ubuntu
