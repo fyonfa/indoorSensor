@@ -2,6 +2,6 @@
 
 ##### Install Modules
 
-cd /home/ubuntu/indoorSensor/
+cd /home/app/indoorSensor/
 npm install
 
