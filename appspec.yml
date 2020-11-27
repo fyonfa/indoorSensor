@@ -6,22 +6,22 @@ files:
 permissions:	
   - object: /	
     pattern: "**"	
-    owner: root
-    group: root	
+    owner: app
+    group: app
 hooks:	
   ApplicationStop:	
     - location: scripts/ApplicationStop.sh	
       timeout: 60	
-      runas: root	
+      runas: app
   BeforeInstall:	
     - location: scripts/BeforeInstall.sh	
       timeout: 300	
-      runas: root	
+      runas: app	
   AfterInstall:	
     - location: scripts/AfterInstall.sh	
       timeout: 300	
-      runas: root	
+      runas: app	
   ApplicationStart:	
     - location: scripts/ApplicationStart.sh	
       timeout: 60	
-      runas: root
+      runas: app
