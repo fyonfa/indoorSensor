@@ -1,7 +1,7 @@
 version: 0.0	
 os: linux	
 files:	
-  - source: /ubuntu/
+  - source: /app/
     destination: /home/ubuntu/indoorSensor	
 permissions:	
   - object: /	
