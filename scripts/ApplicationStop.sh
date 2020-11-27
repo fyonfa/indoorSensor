@@ -1,4 +1,4 @@
 #!/bin/bash
 # Delete indoorSensor service
 
-#sudo forever-service delete indoorSensor
+sudo forever-service delete indoorSensor
